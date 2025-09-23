@@ -1,0 +1,122 @@
+[
+  {
+    "player-image": "https://i.ibb.co.com/mdGzCCB/Virat-Kohli-in-PMO-New-Delhi.jpg",
+    "player-name": "Virat Kohli",
+    "player-country": "India",
+    "playing-role": "Batsman",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm medium",
+    "rating": 94,
+    "price": "1.8M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/cSGf4SZn/steve.jpg",
+    "player-name": "Steve Smith",
+    "player-country": "Australia",
+    "playing-role": "Batsman",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm leg spin",
+    "rating": 91,
+    "price": "1.5M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/rSVcMdp/Babar.jpg",
+    "player-name": "Babar Azam",
+    "player-country": "Pakistan",
+    "playing-role": "Batsman",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm off break",
+    "rating": 93,
+    "price": "1.7M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/hJg0dBDY/Ben-stokesjpg.jpg",
+    "player-name": "Ben Stokes",
+    "player-country": "England",
+    "playing-role": "All-rounder",
+    "batting-style": "Left-hand bat",
+    "bowling-style": "Right-arm fast-medium",
+    "rating": 89,
+    "price": "1.6M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/xdrD7dR/Kane.jpg",
+    "player-name": "Kane Williamson",
+    "player-country": "New Zealand",
+    "playing-role": "Batsman",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm off break",
+    "rating": 92,
+    "price": "1.4M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/PvxSMrdH/Bumrah.jpg",
+    "player-name": "Jasprit Bumrah",
+    "player-country": "India",
+    "playing-role": "Bowler",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm fast",
+    "rating": 95,
+    "price": "2.0M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/1tQgJYTM/Rahid-khan.jpg",
+    "player-name": "Rashid Khan",
+    "player-country": "Afghanistan",
+    "playing-role": "Bowler",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm leg spin",
+    "rating": 94,
+    "price": "1.9M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/3m7ZRvSn/warner.jpg",
+    "player-name": "David Warner",
+    "player-country": "Australia",
+    "playing-role": "Batsman",
+    "batting-style": "Left-hand bat",
+    "bowling-style": "Right-arm leg spin",
+    "rating": 90,
+    "price": "1.3M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/tMpKm0jk/jofra.jpg",
+    "player-name": "Jofra Archer",
+    "player-country": "England",
+    "playing-role": "Bowler",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm fast",
+    "rating": 88,
+    "price": "1.2M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/Df1m270B/Kock.jpg",
+    "player-name": "Quinton de Kock",
+    "player-country": "South Africa",
+    "playing-role": "Wicketkeeper Batsman",
+    "batting-style": "Left-hand bat",
+    "bowling-style": "N/A",
+    "rating": 87,
+    "price": "1.1M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/q3ScwmBQ/Shakin.jpg",
+    "player-name": "Shakib Al Hasan",
+    "player-country": "Bangladesh",
+    "playing-role": "All-rounder",
+    "batting-style": "Left-hand bat",
+    "bowling-style": "Left-arm orthodox spin",
+    "rating": 90,
+    "price": "1.5M"
+  },
+  {
+    "player-image": "https://i.ibb.co.com/8L0DHcD9/Boult.jpg",
+    "player-name": "Trent Boult",
+    "player-country": "New Zealand",
+    "playing-role": "Bowler",
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Left-arm fast-medium",
+    "rating": 89,
+    "price": "1.4M"
+  }
+]
