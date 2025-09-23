@@ -1,41 +1,47 @@
+import { Suspense, useState } from "react";
 import "./App.css";
-import navLogo from "./assets/logo.png";
-import navCoin from "./assets/coin.png";
-import bannerBG from './assets/bg-shadow.png'
-import bannerPng from './assets/banner-main.png'
+import AvailablePlayers from "./Components/AvailablePlayers/AvailablePlayers";
+import Banner from "./Components/Banner/Banner";
 
+import Navbar from "./Components/Navbar/Navbar";
+import SelectedPlayers from "./Components/SelectedPlayers/SelectedPlayers";
+import Player from "./Components/Player/Player";
+
+const fetchPlayers = async () => {
+  const res = await fetch("/public/players.json");
+  return res.json();
+};
+const PlayersPromise = fetchPlayers();
 
 function App() {
+  
+  const [toggle, setToggle] = useState(true);
+  const [availableBL, setAvailableBL] = useState(6000000)
+
+  
+
   return (
     <>
-    {/* navbar section  */}
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <a className="text-xl">
-            <img src={navLogo} alt="" />
-          </a>
-        </div>
-        <div>
-          <button className="flex items-center btn bg-transparent border-transparent">
-            <span>6000000</span>
-            <span className="flex items-center"> Coin </span>
-            <img className="w-[20px] h-[20px]" src={navCoin} alt="" />
+      <Navbar availableBL={availableBL}></Navbar>
+      <Banner></Banner>
+
+      <div className="flex justify-between items-center mt-8">
+        <h1 className="font-bold text-xl ">Available Players</h1>
+        <div className="border-gray-300 border-1 rounded-lg">
+          <button onClick={()=> setToggle(true)} className={`btn ${toggle === true ? "bg-[#E7FE29]": ""}`}>Avaiable</button>
+          <button onClick={()=> setToggle(false)} className={`btn ${toggle === false ? "bg-[#E7FE29]": ""}`}>
+            Selected <span>{0}</span>
           </button>
         </div>
       </div>
 
-      {/* banner section */}
-      <div className="bg-cover bg-center rounded-xl  bg-black my-5" style={{backgroundImage: `url(${bannerBG})`}}>
-      <div className="flex flex-col justify-center items-center space-y-4 p-10">
-        <img src= {bannerPng} alt="" />
-        <h2 className="md:text-3xl font-bold text-white">Assemble Your Ultimate Dream 11 Cricket Team</h2>
-        <p className="text-gray-300">Beyond Boundaries Beyond Limits</p>
-        <button className="btn bg-[#E7FE29]">Claim Free Credit</button>
-      </div>
-        
-      </div>
-
-      
+      {toggle === true ? (
+        <Suspense fallback={<h2>Loading</h2>}>
+          <AvailablePlayers availableBL={availableBL}  setAvailableBL={setAvailableBL} PlayersPromise={PlayersPromise}></AvailablePlayers>
+        </Suspense>
+      ) : (
+        <SelectedPlayers></SelectedPlayers>
+      )}
     </>
   );
 }
