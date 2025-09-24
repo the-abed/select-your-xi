@@ -2,19 +2,25 @@ import React, { useState } from 'react';
 import User from "../../assets/user 1.png";
 import flag from "../../assets/Vector.png";
 
-const Player = ({player,setAvailableBL,availableBL}) => { 
+const Player = ({player,setAvailableBL,availableBL,chosenPlayer,setChosenPlayer}) => { 
     const [isSelected, setIsSelected] = useState(false)
     const {image,name,role,rating,battingStyle,bowlingStyle,price} = player;
+
+
     const handleSelected = ()=>{
         if(availableBL<price){
-            alert('You do not have sufficient balance')
-            return
+           alert("You do not have sufficient balance!");
+            return;
         }
-        setAvailableBL(true)
-        setAvailableBL(availableBL-price)
+        if(chosenPlayer.length === 6){
+          alert("You already selected 6 players");
+          return;
+        }
+        setAvailableBL(availableBL-price);
+        setChosenPlayer([...chosenPlayer,player]);
+        
     }
    
-
     return (
         <div>
             <div className="card bg-base-100 w-96  shadow-sm mx-auto ">
@@ -55,8 +61,8 @@ const Player = ({player,setAvailableBL,availableBL}) => {
               </h2>
               <div className="text-gray-500">
                 <button onClick={()=>{
-                    setIsSelected(true),
-                    handleSelected(player)
+                    setIsSelected(true);
+                    handleSelected();
                     
                 }} className="btn text-gray-500 ">{isSelected?"Selected":"Choose"}</button>
               </div>

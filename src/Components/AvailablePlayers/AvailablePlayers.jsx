@@ -2,7 +2,7 @@ import React, { use } from "react";
 import Player from "../Player/Player";
 
 
-const AvailablePlayers = ({ PlayersPromise,setAvailableBL,availableBL }) => {
+const AvailablePlayers = ({ PlayersPromise,setAvailableBL,availableBL,chosenPlayer,setChosenPlayer }) => {
   const playersData = use(PlayersPromise);
 
   // {
@@ -19,7 +19,12 @@ const AvailablePlayers = ({ PlayersPromise,setAvailableBL,availableBL }) => {
   return (
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5 ">
-      {playersData.map((player) => <Player availableBL={availableBL} setAvailableBL={setAvailableBL} player={player}></Player>)}
+      {
+      playersData.map(player =>  <Player 
+      chosenPlayer={chosenPlayer} setChosenPlayer={setChosenPlayer} 
+      availableBL={availableBL} setAvailableBL={setAvailableBL}
+      player={player} key={player.id}></Player>)
+      }
     </div>
 
   );

@@ -1,6 +1,30 @@
 body{
   background-color: rgb(255, 255, 255);
-  max-width: 1200px ;
-  margin: 0 auto;
   font-family: 'Sora', sans-serif;
+  position: relative;
 }
+#subscribe{
+  position: absolute;
+  bottom: 480px;
+  left: 160px;
+}
+#footer h2{
+  color: white;
+  font-weight: semi-bold;
+  margin-bottom: 10px;
+}
+
+#footer p{
+  color: gray;
+  font-size: small;
+}
+#footer ul li{
+  color: gray;
+  font-size: small;
+  list-style: disc;
+  margin-top: 5px;
+}
+ /* #footer { 
+  width: 100vw; 
+  z-index: ;
+} */
