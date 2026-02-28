@@ -127,6 +127,7 @@ Through this project, I practiced:
 ## 👨‍💻 Author
 
 **Mohammad Abed**
+
 Junior Web Developer (MERN Stack)
 
 ---
